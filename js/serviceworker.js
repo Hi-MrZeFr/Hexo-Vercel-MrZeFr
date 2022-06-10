@@ -1,0 +1,1 @@
+window.addEventListener("load",(async()=>{navigator.serviceWorker.register(`/js/sw-mrzefr.js?time=${(new Date).getTime()}`).then((async e=>{"true"!=window.localStorage.getItem("install")&&(window.localStorage.setItem("install","true"),setTimeout((()=>{window.location.search=`?time=${(new Date).getTime()}`}),1e3))})).catch((e=>{}))}));
